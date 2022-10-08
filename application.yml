@@ -31,6 +31,10 @@ management:
     env:
       enabled: true
 
+info:
+  app:
+    name: ${spring.application.name}
+
 # testplane: Lance
 
 # test:
