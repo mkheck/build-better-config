@@ -27,6 +27,9 @@ management:
     export:
       prometheus:
         enabled: true
+  info:
+    env:
+      enabled: true
 
 # testplane: Lance
 
