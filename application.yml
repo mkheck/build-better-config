@@ -43,10 +43,10 @@ info:
     name: ${spring.application.name}
 
 # Eureka
-eureka:
-  client:
-    healthcheck:
-      enabled: true
+# eureka:
+#   client:
+#     healthcheck:
+#       enabled: true
 
 # testplane: Lance
 
