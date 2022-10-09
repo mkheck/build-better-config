@@ -9,11 +9,7 @@ server:
 
 # Enable all actuator endpoints FOR DEMO PURPOSES ONLY!
 # management.endpoints.web.exposure.include: "*"
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+# Below in that beautiful YAML!
 
 # Logging
 # logging.level.org.springframework: INFO
