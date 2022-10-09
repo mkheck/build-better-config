@@ -3,14 +3,24 @@
 server:
   # start services on random port by default
   port: 0
-  # The stop processing uses a timeout which provides a grace period during which existing requests will be allowed to complete but no new requests will be permitted
+  # The stop processing uses a timeout which provides a grace period during which existing requests 
+  # will be allowed to complete but no new requests will be permitted
   shutdown: graceful
 
 # Enable all actuator endpoints FOR DEMO PURPOSES ONLY!
-management.endpoints.web.exposure.include: "*"
+# management.endpoints.web.exposure.include: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 # Logging
-logging.level.org.springframework: INFO
+# logging.level.org.springframework: INFO
+logging:
+  level:
+    org:
+      springframework: INFO
 
 # Metrics
 management:
@@ -31,9 +41,16 @@ management:
     env:
       enabled: true
 
+# Identification
 info:
   app:
     name: ${spring.application.name}
+
+# Eureka
+eureka:
+  client:
+    healthcheck:
+      enabled: true
 
 # testplane: Lance
 
