@@ -1,7 +1,7 @@
 spring:
-  config:
-    activate:
-      on-profile: default
+  # config:
+  #   activate:
+  #     on-profile: default
 # spring:
 #   profiles: default
   cloud:
