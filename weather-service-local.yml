@@ -1,0 +1,14 @@
+#---
+spring:
+  config:
+    activate:
+      on-profile: local
+  zipkin:
+    baseUrl: http://tracing-service:9411
+server:
+  port: 8084
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service:8761/eureka/
+    
