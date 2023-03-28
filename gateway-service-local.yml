@@ -1,25 +1,25 @@
 #---
-# spring:
-#   config:
-#     activate:
-#       on-profile: local
-#   zipkin:
-#     baseUrl: http://tracing-service:9411
+spring:
+  config:
+    activate:
+      on-profile: local
+  zipkin:
+    baseUrl: http://tracing-service:9411
 
-# server:
-#   port: ${PORT:8080}
-#   compression:
-#     enabled: true
-#     mime-types: application/json,text/css,application/javascript
-#     min-response-size: 2048
+server:
+  port: ${PORT:8080}
+  compression:
+    enabled: true
+    mime-types: application/json,text/css,application/javascript
+    min-response-size: 2048
 
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: http://discovery-service:8761/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service:8761/eureka/
 
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
